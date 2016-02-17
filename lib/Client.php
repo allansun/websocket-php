@@ -133,7 +133,7 @@ class Client extends Base {
           function($key, $value) { return "$key: $value"; }, array_keys($headers), $headers
         )
       )
-      . "\r\n\r\n";
+      . "\r\n";
 
     // Send headers.
     $this->write($header);
